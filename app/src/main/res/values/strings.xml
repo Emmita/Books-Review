@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Books</string>
+    <string name="hint_edit_text">Texto</string>
+    <string name="titulo">Titulo</string>
+    <string name="autor">Autor</string>
+    <string name="review">Review</string>
+    <string name="editar">Editar</string>
+    <string name="guardar">Guardar</string>
+    <string name="borrar">Borrar</string>
+    <string name="random">Insertar información random</string>
+    <string name="borrar_todo">Borrar todos los libros</string>
 </resources>
