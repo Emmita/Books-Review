@@ -9,4 +9,15 @@
     <string name="borrar">Borrar</string>
     <string name="random">Insertar información random</string>
     <string name="borrar_todo">Borrar todos los libros</string>
+    <string name="insercion_fallida">Error al guardar libro</string>
+    <string name="insercion_exitosa">Libro guardado</string>
+    <string name="actualizacion_fallida">Error con la actualización del libro</string>
+    <string name="actualizacion_exitosa">Libro actualizado</string>
+    <string name="eliminacion_libro_fallida">Error al eliminar el libro</string>
+    <string name="eliminacion_libro_exitosa">Libro eliminado</string>
+    <string name="dialogo_cambios_no_guardados">¿Quiere descartar sus cambios y sejar de editar?</string>
+    <string name="descartar">Descartar</string>
+    <string name="seguir_editando">Seguir editando</string>
+    <string name="dialogo_borrar">¿Borrar este libro?</string>
+    <string name="cancelar">Cancelar</string>
 </resources>
