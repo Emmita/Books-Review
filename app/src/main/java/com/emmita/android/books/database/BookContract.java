@@ -14,7 +14,7 @@ public class BookContract {
     /**Formando el URI
     El nombre que se le asigna al content authority es recomendable que sea el nombre del paquete de la aplicación
     ya que, es único en el proyecto*/
-    public static final String CONTENT_AUTHORITY = "com.emmita.android.books.database";
+    public static final String CONTENT_AUTHORITY = "com.emmita.android.books";
     /**Concatenamos el content authority para formar la base del URI */
     public static final Uri BASE_CONTENT_URI = Uri.parse("content://"+ CONTENT_AUTHORITY);
     /**Dirección donde se va a buscar le información de los libros*/
