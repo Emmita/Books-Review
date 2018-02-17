@@ -17,8 +17,22 @@
             </intent-filter>
         </activity>
         <activity android:name=".EditorActivity"
-            android:parentActivityName=".MainActivity"/>
-        <activity android:name=".ShowActivity"></activity>
+            android:parentActivityName=".MainActivity">
+
+            <meta-data
+                android:name="android.support.PARENTACTIVITY"
+                android:value=".MainActivity"/>
+
+        </activity>
+        <activity android:name=".ShowActivity">
+
+        </activity>
+        <provider
+            android:authorities="com.emmita.android.books"
+            android:name=".database.BookProvider"
+            android:exported="false"/>
+
+
     </application>
 
 </manifest>
