@@ -13,6 +13,7 @@ import android.support.v4.app.NavUtils;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -63,7 +64,15 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
         Intent intent = getIntent();
         mCurrentBookUri = intent.getData();
 
-        getLoaderManager().initLoader(EXISTING_BOOK_LOADER, null, this);
+        if (mCurrentBookUri == null){
+            setTitle("Agregar libro");
+        }else
+        {
+            setTitle("Editar libro");
+            getLoaderManager().initLoader(EXISTING_BOOK_LOADER, null, this);
+
+        }
+
 
         //Encuentra los EditTexts en el archivo xml
         mTituloEditText = (EditText) findViewById(R.id.edit_text_titulo);
@@ -254,7 +263,9 @@ public class EditorActivity extends AppCompatActivity implements LoaderManager.L
             }
 
             //Se cierra la actividad
+
             finish();
+
         }
 
     }

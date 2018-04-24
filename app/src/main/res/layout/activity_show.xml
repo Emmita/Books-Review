@@ -12,18 +12,22 @@
         android:id="@+id/text_view_titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="#000"
         android:text="@string/titulo" />
 
     <TextView
         android:id="@+id/text_view_autor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textSize="20sp"
         android:text="@string/autor" />
 
     <TextView
         android:id="@+id/text_view_review"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/review" />
+        android:text="@string/review"
+        android:paddingTop="16dp"/>
 
 </LinearLayout>
